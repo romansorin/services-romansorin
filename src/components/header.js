@@ -1,33 +1,23 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import '../sass/colors.scss'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+  <header className="site-header">
+    <Link to="/" className="header-brand">
+      {siteTitle}
+    </Link>
+    <nav className="header-items">
+      <ul className="horizontal-list list-unstyled">
+        <Link to="/" className="list-item text-decoration-none">
+          Text 1
         </Link>
-      </h1>
-    </div>
+        <Link to="/" className="list-item text-decoration-none">
+          Text 2
+        </Link>
+      </ul>
+    </nav>
   </header>
 )
 
