@@ -1,0 +1,49 @@
+$light-blue: #a7bfe8;
+$dark-blue: #6190e8;
+
+$black: #000;
+
+$poppins: 'Poppins', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+$gradient: linear-gradient(160.52deg, $light-blue -12.83%, $dark-blue 104%);
+
+body {
+  font-family: $open-sans;
+  margin: 0;
+}
+
+.site-header {
+  color: $black;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 1.45rem;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+.header-brand {
+  color: $black;
+  margin: auto 0;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.horizontal-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.list-item {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
