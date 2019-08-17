@@ -5,6 +5,7 @@ import Button from '../components/Button'
 import Hero from '../components/hero'
 import Background from '../components/Background'
 import PricingCard from '../components/PricingCard'
+import FAQCard from '../components/FAQCard'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -26,6 +27,7 @@ const IndexPage = () => (
       details="sdaasddsasda"
       buttonText="dsads"
     />
+    <FAQCard />
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
