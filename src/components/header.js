@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import '../sass/colors.scss'
+// import '../sass/colors.scss'
 
 const Header = ({ siteTitle }) => (
   <header className="site-header">
