@@ -2,12 +2,9 @@ import React, { Component } from 'react'
 
 export default class Button extends Component {
   render() {
-    const { children } = this.props
+    const { children, styles } = this.props
     return (
-      <button
-        className="bg-gray-900 text-white font-bold py-2 px-4 rounded"
-        {...this.props}
-      >
+      <button className={`inline-flex items-center ${styles}`} {...this.props}>
         {children}
       </button>
     )
