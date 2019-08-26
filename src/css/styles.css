@@ -8,3 +8,7 @@
     background-repeat: no-repeat;
     height: 758px;
 }
+
+.leading-looser {
+    line-height: 2.5;
+}

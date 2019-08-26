@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Button from '../components/Button'
-import Hero from '../components/hero'
-import Background from '../components/Background'
-import PricingCard from '../components/PricingCard'
-import FAQCard from '../components/FAQCard'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import plans from '../images/plans.svg'
 
-import Image from '../components/image'
-import SEO from '../components/seo'
+import {
+  Button,
+  Hero,
+  Background,
+  PricingCard,
+  FAQCard,
+  Header,
+  Footer,
+  SEO,
+} from '../components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import '../css/styles.css'
@@ -35,18 +37,16 @@ const IndexPage = () => {
           title="Unlimited sites. Unlimited storage."
           subtitle="And so much more, all for one price."
         >
-          <p class="text-center text-softwhite italic font-body text-sm font-light">
+          <p className="text-center text-softwhite italic font-body text-sm font-light">
             Get your first month completely free.
           </p>
+          <div className="mt-8 container mx-auto flex flex-row">
+            <img className="mx-auto" src={plans} alt="Pricing plans" />
+            <PricingCard name="Standard plan" price="$100/month">Flexible options and pricing for businesses, startups, or users with advanced needs and stricter budgets.</PricingCard>
+          </div>
         </Hero>
       </Background>
       <div className="container mx-auto">
-        <PricingCard
-          name="Standard plan"
-          price="100"
-          details="sdaasddsasda"
-          buttonText="dsads"
-        />
         <FAQCard />
         {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
           <Image />

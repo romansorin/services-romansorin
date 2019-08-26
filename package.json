@@ -23,6 +23,8 @@
     "tailwindcss": "^1.1.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "babel-preset-gatsby": "^0.2.8",
     "prettier": "^1.18.2"
   },
   "keywords": [

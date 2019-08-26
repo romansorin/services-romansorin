@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Button from '../components/Button'
+import {Button} from './index'
 
 const Header = ({ siteTitle }) => (
   <header>

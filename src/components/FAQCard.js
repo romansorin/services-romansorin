@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class FAQCard extends Component {
   render() {
+    const {question, answer} = this.props;
     return (
       <div className="max-w-sm w-full lg:max-w-full lg:flex">
         <div
@@ -27,25 +28,11 @@ export default class FAQCard extends Component {
               Members only
             </p>
             <div className="text-gray-900 font-bold text-xl mb-2">
-              Can coffee make you a better developer?
+              {question}
             </div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+              {answer}
             </p>
-          </div>
-          <div className="flex items-center">
-            <img
-              className="w-10 h-10 rounded-full mr-4"
-              src="https://images.unsplash.com/photo-1560440021-33f9b867899d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1209&q=80"
-              alt="Avatar of Jonathan Reinink"
-            />
-            >
-            <div className="text-sm">
-              <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-              <p className="text-gray-600">Aug 18</p>
-            </div>
           </div>
         </div>
       </div>
