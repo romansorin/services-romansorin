@@ -12,3 +12,7 @@
 .leading-looser {
     line-height: 2.5;
 }
+
+.pricing-card {
+    box-shadow: 1px 4px 53px rgba(0, 0, 0, 0.22);
+}
