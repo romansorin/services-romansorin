@@ -1,5 +1,6 @@
 export Background from './Background'
 export Button from './Button'
+export ButtonLink from './ButtonLink'
 export FAQCard from './FAQCard'
 export Footer from './footer'
 export Header from './header'
